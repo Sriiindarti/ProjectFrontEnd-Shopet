@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>shopet.com</title>
+
+          <!-- Bootsrap, Javasript online -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          
+          <!-- Manggil style External -->
+          <link rel="stylesheet" href="Style.css" type="text/css">
+
+     </head>
+     <body>
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+               <div class="container">
+                    <!--  Brand atau Logo toko Kita  -->
+                    <a class="navbar-brand" href="main.html">
+                         <img src="image/SHOPET.png" alt="LOGOSHOPET">
+                    </a>
+
+                    <!--  Biar saat dikecilin akan keluar tabbar ketika ukuran layar kurang dari 690px -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                         <ul class="navbar-nav ml-auto text-center align-items-center">
+                              <li class="nav-item">
+                                   <a class="nav-link" href="dogs.html">Dogs</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="cats.html">Cats</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="bird.html">Bird</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="fish.html">Fish</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a href="checkout.html">
+                                        <img src="image/Cart.png" style="width: 32px;" alt="CART">
+                                   </a>
+                              </li>    
+                         </ul>
+                    </div>  
+               </div>
+          </nav>
+          <!-- Navbar -->
+
+          <!--  Cart  -->
+          <div class="wishlist-box-main py-4" id="cart">
+               <div class="container">
+                   <div class="row">
+                         <div class="col-lg-12">
+                              <h4 style="color: #C2ADFF; margin-bottom: 32px; text-align: center;">CART</h4>
+                              <div class="table-main table-responsive">
+                                   <table class="table align text-center">
+                                        <thead>
+                                             <tr>
+                                                  <th>Images</th>
+                                                  <th>Product Name</th>
+                                                  <th>Unit Price </th>
+                                                  <th>Quantity</th>
+                                                  <th>Sub Total</th>
+                                                  <th>Remove</th>
+                                             </tr>
+                                        </thead>
+                                        <tbody>
+                                             <tr>
+                                                  <td class="thumbnail-img align-items-center">
+                                                       <a href="#">
+                                                            <img class="img" src="image/Anjing1.png" alt="">
+                                                       </a>
+                                                  </td>
+                                                  <td class="name-pr">
+                                                       <a href="#">
+                                                            Pro Plan Puppy 2.5kg
+                                                       </a>
+                                                  </td>
+                                                  <td class="price-pr">Rp175.000</td>
+                                                  <td class="quantity-box">2</td>
+                                                  <td class="subtotal"> Rp350.000</td>
+                                                  <td class="remove-pr">
+                                                       <a href="#">
+                                                            <i class="bi bi-trash"></i>
+                                                       </a>
+                                                  </td>
+                                             </tr>
+                                             <tr>
+                                                  <td class="thumbnail-img align-items-center">
+                                                       <a href="#">
+                                                            <img class="img" src="image/Burung4.png" alt="">
+                                                       </a>
+                                                  </td>
+                                                  <td class="name-pr">
+                                                       <a href="#">
+                                                            Chirpy Seaweed 400g
+                                                       </a>
+                                                  </td>
+                                                  <td class="price-pr">Rp8.000</td>
+                                                  <td class="quantity-box">1</td>
+                                                  <td class="subtotal"> Rp8.000</td>
+                                                  <td class="remove-pr">
+                                                       <a href="#">
+                                                            <i class="bi bi-trash"></i>
+                                                       </a>
+                                                  </td>
+                                             </tr>
+                                             <tr>
+                                                  <td class="thumbnail-img align-items-center">
+                                                       <a href="#">
+                                                            <img class="img" src="image/Ikan2.png" alt="">
+                                                       </a>
+                                                  </td>
+                                                  <td class="name-pr">
+                                                       <a href="#">
+                                                            Akari Maggot Pro 130gr
+                                                       </a>
+                                                  </td>
+                                                  <td class="price-pr">Rp25.000</td>
+                                                  <td class="quantity-box">1</td>
+                                                  <td class="subtotal"> Rp25.000</td>
+                                                  <td class="remove-pr">
+                                                       <a href="#">
+                                                            <i class="bi bi-trash"></i>
+                                                       </a>
+                                                  </td>
+                                             </tr>
+                                             <tr>
+                                                  <td colspan="4"> Total </td>
+                                                  <td class="subtotal"> Rp383.000</td>
+                                                  <td class="Pay">
+                                                       <a class="btn btn-success btn-sm" style="width: 70%; color: #ffffff;" href="#" role="button" onclick="alert('Thank You, Please Wait For Your Order')">Pay</a> 
+                                                  </td>
+                                             </tr>
+                                        </tbody>
+                                   </table>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!--  Cart  -->
+
+          <!-- Footer -->
+          <footer id="footer" class="footer-dark">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-3 col-md-6 mt-3">
+                              <img src="image/Logo.png" style="width: 30%; margin-bottom: 4px;">
+                              <ul>
+                                   
+                                   <li><a>Monday - Sunday</a></li>
+                                   <li><a href="https://goo.gl/maps/s5ZZwwVyXw4Rnpi59" target="_blank">Jl. Krukut Raya, Krukut,<br> Kec. Limo, Kota Depok, <br> Jawa Barat 16514</a></li>
+                              </ul>
+                              </ul>
+                         </div>
+                         <div class="col-lg-3 col-md-6 mt-4">
+                              <h3>Our Product</h3>
+                              <ul>
+                                   <li><a href="dogs.html">Dogs</a></li>
+                                   <li><a href="cats.html">Cats</a></li>
+                                   <li><a href="bird.html">Bird</a></li>
+                                   <li><a href="fish.html">Fish</a></li>
+                              </ul>
+                         </div>
+                         <div class="col-lg-3 col-md-6 mt-4">
+                              <h3>Online Store</h3>
+                              <ul>
+                                   <li><a href="#">Official Website</a></li>
+                                   <li><a href="#">Tokopedia</a></li>
+                                   <li><a href="#">Shopee</a></li>
+                                   <li><a href="#">Lazada</a></li>
+                                   <li><a href="#">Bukalapak</a></li>
+                              </ul>
+                              
+                              
+                         </div>
+                         <div class="col-lg-3 col-md-6 mt-4">
+                              <h3>About Us</h3>
+                              <ul>
+                                   <li><a href="#about">About</a></li>
+                                   <li><a href="#newProduct">Best Selling</a></li>
+                                   <li><a href="#">Careers and Internships</a></li>
+                                   <li><a href="#testimonial">Testimonials</a></li>
+                                   <li><a href="about.html">Contact Us</a></li>
+                              </ul>
+                         </div>
+
+
+                         <div class="col item social py-2 mt-5"><a href="https://api.whatsapp.com/message/7BQ2SZPSJYDGP1"><i class="bi bi-telephone"></i></a><a href="https://api.whatsapp.com/message/7BQ2SZPSJYDGP1"><i class="bi bi-whatsapp"></i></a><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="mailto:shopetanjayabadi@gmail.com"><i class="bi bi-envelope"></i></a></div>
+                    </div>
+                    <p class="copyright">PT Shopet Anjayabadi © 2021</p>
+               </div>
+          </footer>
+          
+          <!-- Footer -->
+</body>
+</html>

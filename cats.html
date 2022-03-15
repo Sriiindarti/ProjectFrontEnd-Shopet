@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>shopet.com</title>
+
+          <!-- Bootsrap, Javasript online -->
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          
+          <!-- Manggil style External -->
+          <link rel="stylesheet" href="Style.css" type="text/css">
+
+     </head>
+     <body>
+          <!-- Navbar -->
+          <nav class="navbar navbar-expand-md navbar-dark" id="navbar">
+               <div class="container">
+                    <!--  Brand atau Logo toko Kita  -->
+                    <a class="navbar-brand" href="main.html">
+                         <img src="image/SHOPET.png" alt="LOGOSHOPET">
+                    </a>
+
+                    <!--  Biar saat dikecilin akan keluar tabbar ketika ukuran layar kurang dari 690px -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                         <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                         <ul class="navbar-nav ml-auto text-center align-items-center">
+                              <li class="nav-item">
+                                   <a class="nav-link" href="dogs.html">Dogs</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="cats.html">Cats</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="bird.html">Bird</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a class="nav-link" href="fish.html">Fish</a>
+                              </li>
+                              <li class="nav-item">
+                                   <a href="checkout.html">
+                                        <img src="image/Cart.png" style="width: 32px;" alt="CART">
+                                   </a>
+                              </li>      
+                         </ul>
+                    </div>  
+               </div>
+          </nav>
+          <!-- Navbar -->
+
+          <!-- Products -->
+          <div id="newProduct">
+               <div class="container-fluid py-5">
+                    <div class="container">
+                         <div class="row">
+                              <div class="col-12">
+                                   <h4 class="mt-2" style="text-align: center;">Cats Food</h4>  
+                              </div>
+                         </div>
+
+                         <div class="row my-2">
+                              <div class=" col-lg-3 col-md-4 col-sm-6 mt-4">
+                                   <div class="zoom card h-100">
+                                        <img src="image/Kucing1.png">
+                                        <a href="#">
+                                             <div class="card-body">
+                                                  <h6 style="color: yellow;">
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-half"></i>
+                                                  </h6> 
+                                                  <h5 class="card-title">Felibite 500g</h5>
+                                                  <h6 class="price"> Rp15.000 </h6>
+                                                  <a class="btn btn-outline-primary btn-sm mt-2" href="#" role="button" data-target="#cat1" data-toggle="modal">Detail</a>
+                                                  <a class="btn btn-outline-warning btn-sm mt-2" href="#" role="button" onclick="alert('Order Added To Cart')">Checkout</a> 
+                                             </div>
+                                        </a>
+                                   </div>
+
+                                   <!-- Modal -->
+                                   <div class="modal fade" id="cat1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                             <div class="modal-content">
+                                                  <div class="modal-header">
+                                                       <h5 class="modal-title" id="exampleModalLabel">Detail Product</h5>
+                                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                       <div class="row">
+                                                            <div class="col-md-6">
+                                                                 <img src="image/Kucing1.png" alt="">
+                                                            </div>
+                                                       </div>      
+                                                       <div class="row">
+                                                            <div class="col-md-6">
+                                                                 <table class="table table-borderless" style="width: 400px;">
+                                                                      <tr>
+                                                                           <th>Rating</th>
+                                                                           <td>
+                                                                                <h6 style="color: yellow;">
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-half"></i>
+                                                                                </h6>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Name Product</th>
+                                                                           <td>Felibite 500g</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Category</th>
+                                                                           <td>Cats Food</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Description</th>
+                                                                           <td>Enriched with omega 3 and 6 which helps improve the health of the cat's skin and coat</td>
+                                                                      </tr>
+                                                                 </table>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!-- Modal -->
+
+                              </div>
+
+                              <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                   <div class="zoom card h-100">
+                                        <img src="image/kucing2.png">
+                                        <a href="#">
+                                             <div class="card-body">
+                                                  <h6 style="color: yellow;">
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-half"></i>
+                                                  </h6> 
+                                                  <h5 class="card-title">Royal Canin Savour 1kg</h5>
+                                                  <h6 class="price">Rp113.000</h6>
+                                                  <a class="btn btn-outline-primary btn-sm mt-2" href="#" role="button" data-target="#cat2" data-toggle="modal">Detail</a>
+                                                  <a class="btn btn-outline-warning btn-sm mt-2" href="#" role="button" onclick="alert('Order Added To Cart')">Checkout</a>
+                                             </div>
+                                        </a>
+                                   </div>
+
+                                   <!-- Modal -->
+                                   <div class="modal fade" id="cat2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                             <div class="modal-content">
+                                                  <div class="modal-header">
+                                                       <h5 class="modal-title" id="exampleModalLabel">Detail Product</h5>
+                                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                       <div class="row">
+                                                            <div class="col-md-6">
+                                                                 <img src="image/Kucing2.png" alt="">
+                                                            </div>
+                                                       </div>      
+                                                       <div class="row">
+                                                            <div class="col-md-6">
+                                                                 <table class="table table-borderless" style="width: 400px;">
+                                                                      <tr>
+                                                                           <th>Rating</th>
+                                                                           <td>
+                                                                                <h6 style="color: yellow;">
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-half"></i>
+                                                                                </h6>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Name Product</th>
+                                                                           <td>Royal Canin Savour 1kg</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Category</th>
+                                                                           <td>Cats Food</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Description</th>
+                                                                           <td>With two synergistic kibbles of different shapes, compositions and textures, Savor Exigent stimulates these cats' natural preferences</td>
+                                                                      </tr>
+                                                                 </table>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!-- Modal -->
+                              </div>
+
+                              <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                   <div class="zoom card h-100">
+                                        <img src="image/Kucing3.png">
+                                        <a href="#">
+                                             <div class="card-body">
+                                                  <h6 style="color: yellow;">
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-half"></i>
+                                                  </h6> 
+                                                  <h5 class="card-title">Whiskas 1.2kg</h5>
+                                                  <h6 class="price"> Rp95.000 </h6>
+                                                  <a class="btn btn-outline-primary btn-sm mt-2" href="#" role="button" data-target="#cat3" data-toggle="modal">Detail</a>
+                                                  <a class="btn btn-outline-warning btn-sm mt-2" href="#" role="button" onclick="alert('Order Added To Cart')">Checkout</a> 
+                                             </div>
+                                        </a>
+                                   </div>
+
+                                   <!-- Modal -->
+                                   <div class="modal fade" id="cat3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                             <div class="modal-content">
+                                                  <div class="modal-header">
+                                                       <h5 class="modal-title" id="exampleModalLabel">Detail Product</h5>
+                                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                       <div class="row">
+                                                            <div class="col-md-6">
+                                                                 <img src="image/Kucing3.png" alt="">
+                                                            </div>
+                                                       </div>      
+                                                       <div class="row">
+                                                            <div class="col-md-6">
+                                                                 <table class="table table-borderless" style="width: 400px;">
+                                                                      <tr>
+                                                                           <th>Rating</th>
+                                                                           <td>
+                                                                                <h6 style="color: yellow;">
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                </h6>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Name Product</th>
+                                                                           <td>Whiskas 1.2kg</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Category</th>
+                                                                           <td>Cats Food</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Description</th>
+                                                                           <td>Very suitable for all types of cats, suitable for cats over the age of 12 months with the content of tuna flavor that is very liked by your favorite cat</td>
+                                                                      </tr>
+                                                                 </table>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!-- Modal -->
+
+                              </div>
+
+                              <div class="col-lg-3 col-md-4 col-sm-6 mt-4">
+                                   <div class="zoom card h-100">
+                                        <img src="image/Kucing4.png">
+                                        <a href="#">
+                                             <div class="card-body">
+                                                  <h6 style="color: yellow;">
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                       <i class="bi bi-star-fill"></i>
+                                                  </h6> 
+                                                  <h5 class="card-title"> Bolt Salmon 1kg</h5>
+                                                  <h6 class="price">Rp25.000</h6>
+                                                  <a class="btn btn-outline-primary btn-sm mt-2" href="#" role="button" data-target="#cat4" data-toggle="modal">Detail</a>
+                                                  <a class="btn btn-outline-warning btn-sm mt-2" href="#" role="button" onclick="alert('Order Added To Cart')">Checkout</a> 
+                                             </div>
+                                        </a>
+                                   </div>
+
+                                   <!-- Modal -->
+                                   <div class="modal fade" id="cat4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                             <div class="modal-content">
+                                                  <div class="modal-header">
+                                                       <h5 class="modal-title" id="exampleModalLabel">Detail Product</h5>
+                                                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                  </div>
+                                                  <div class="modal-body">
+                                                       <div class="row">
+                                                            <div class="col-md-6">
+                                                                 <img src="image/Kucing4.png" alt="">
+                                                            </div>
+                                                       </div>      
+                                                       <div class="row">
+                                                            <div class="col-md-6">
+                                                                 <table class="table table-borderless" style="width: 400px;">
+                                                                      <tr>
+                                                                           <th>Rating</th>
+                                                                           <td>
+                                                                                <h6 style="color: yellow;">
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                     <i class="bi bi-star-fill"></i>
+                                                                                </h6>
+                                                                           </td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Name Product</th>
+                                                                           <td>Bolt Salmon 1kg</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Category</th>
+                                                                           <td>Cats Food</td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                           <th>Description</th>
+                                                                           <td>Formulated to meet the nutritional standards of the Cat Food Nutrition Profile approved by the AAFCO (Association of American Feed Control Officials)</td>
+                                                                      </tr>
+                                                                 </table>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <!-- Modal -->
+                                   
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!-- Products -->
+
+
+          <!-- Footer -->
+          <footer id="footer" class="footer-dark mt-5">
+               <div class="container">
+                    <div class="row">
+                         <div class="col-lg-3 col-md-6 mt-3">
+                              <img src="image/Logo.png" style="width: 30%; margin-bottom: 4px;">
+                              <ul>
+                                   
+                                   <li><a>Monday - Sunday</a></li>
+                                   <li><a href="https://goo.gl/maps/s5ZZwwVyXw4Rnpi59" target="_blank">Jl. Krukut Raya, Krukut,<br> Kec. Limo, Kota Depok, <br> Jawa Barat 16514</a></li>
+                              </ul>
+                              </ul>
+                         </div>
+                         <div class="col-lg-3 col-md-6 mt-4">
+                              <h3>Our Product</h3>
+                              <ul>
+                                   <li><a href="dogs.html">Dogs</a></li>
+                                   <li><a href="cats.html">Cats</a></li>
+                                   <li><a href="bird.html">Bird</a></li>
+                                   <li><a href="fish.html">Fish</a></li>
+                              </ul>
+                         </div>
+                         <div class="col-lg-3 col-md-6 mt-4">
+                              <h3>Online Store</h3>
+                              <ul>
+                                   <li><a href="#">Official Website</a></li>
+                                   <li><a href="#">Tokopedia</a></li>
+                                   <li><a href="#">Shopee</a></li>
+                                   <li><a href="#">Lazada</a></li>
+                                   <li><a href="#">Bukalapak</a></li>
+                              </ul>
+                              
+                              
+                         </div>
+                         <div class="col-lg-3 col-md-6 mt-4">
+                              <h3>About Us</h3>
+                              <ul>
+                                   <li><a href="#about">About</a></li>
+                                   <li><a href="#newProduct">Special Offers</a></li>
+                                   <li><a href="#">Careers and Internships</a></li>
+                                   <li><a href="#testimonial">Testimonials</a></li>
+                                   <li><a href="about.html">Contact Us</a></li>
+                              </ul>
+                         </div>
+
+
+                         <div class="col item social py-2 mt-5"><a href="https://api.whatsapp.com/message/7BQ2SZPSJYDGP1"><i class="bi bi-telephone"></i></a><a href="https://api.whatsapp.com/message/7BQ2SZPSJYDGP1"><i class="bi bi-whatsapp"></i></a><a href="#"><i class="bi bi-facebook"></i></a><a href="#"><i class="bi bi-instagram"></i></a><a href="#"><i class="bi bi-twitter"></i></a><a href="mailto:shopetanjayabadi@gmail.com"><i class="bi bi-envelope"></i></a></div>
+                    </div>
+                    <p class="copyright">PT Shopet Anjayabadi © 2021</p>
+               </div>
+          </footer>
+          
+          <!-- Footer -->
+    
+</body>
+
+</html>
